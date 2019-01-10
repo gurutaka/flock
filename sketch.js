@@ -1,5 +1,5 @@
 let flock
-const num = 50
+const num = 10
 
 function setup() {
   colorMode(HSB, 360, 100, 100, 100)
@@ -14,7 +14,8 @@ function setup() {
 }
 
 function draw() {
-  background(0)
+  fill(0, 30)
+  rect(0, 0, width, height)
   flock.run() //flock内で全boidが更新
 }
 

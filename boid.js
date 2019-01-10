@@ -7,10 +7,15 @@ class Boid {
     this.maxspeed = 2.5 // Maximum speed
     this.maxforce = 0.05 // Maximum steering force
 
+    // const fishColor = [
+    //   color(100, 100, 250),
+    //   color(50, 100, 250),
+    //   color(10, 100, 250)
+    // ]
     const fishColor = [
-      color(100, 200, 250),
-      color(60, 250, 250),
-      color(400, 200, 250)
+      color(220, 100, 150),
+      color(200, 150, 250),
+      color(180, 200, 250)
     ]
 
     this.outForceLine = 100
@@ -142,8 +147,8 @@ class Boid {
     beginShape()
     fill(this.color)
     vertex(0, 15)
-    bezierVertex(0, 12, -2.5, 2.5, 0, 0)
-    bezierVertex(0, 0, 2.5, 2.5, 0, 12)
+    bezierVertex(0, 12, -5, 5, 0, 0)
+    bezierVertex(0, 0, 5, 5, 0, 12)
     endShape()
 
     pop()
